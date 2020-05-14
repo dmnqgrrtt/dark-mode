@@ -2,7 +2,7 @@ import {useLocalStorage} from './useLocalStorage';
 import { useEffect } from 'react';
 
 export function useDarkMode () {
-    const [value, setValue] = useLocalStorage('mykey')
+    const [value, setValue] = useLocalStorage('mykey', true)
 
     useEffect(()=>{
         const body = document.querySelector('body');
